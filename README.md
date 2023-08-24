@@ -1,9 +1,9 @@
 
-# Inventory Management System
+# Library Inventory Management System
 
 ## Overview
 
-This is a simple Inventory Management System built using ASP.NET Core and Entity Framework. The system allows you to manage inventory items and customers, as well as handle checkouts and returns.
+This project is a Library Inventory Management System built using ASP.NET Core and Entity Framework. The system allows you to manage inventory items, customers, and handle checkouts and returns.
 
 ## Features
 
@@ -18,7 +18,6 @@ This is a simple Inventory Management System built using ASP.NET Core and Entity
 - ASP.NET Core
 - Entity Framework
 - PostgreSQL
-- ElephantSQL (Cloud-based PostgreSQL database)
 
 ## Setup
 
@@ -26,20 +25,19 @@ This is a simple Inventory Management System built using ASP.NET Core and Entity
 
 - .NET SDK
 - PostgreSQL database
-- ElephantSQL account (optional)
 
 ### Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/YourUsername/InventoryManagementSystem.git
+    git clone https://github.com/iam-hbk/Library-inventory-management.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd InventoryManagementSystem
+    cd Library-inventory-management
     ```
 
 3. Install the required packages:
@@ -63,9 +61,7 @@ This is a simple Inventory Management System built using ASP.NET Core and Entity
     dotnet run
     ```
 
-## Usage
-
-The API provides the following endpoints:
+## API Endpoints
 
 - `GET /api/Inventory`: Fetch all inventory items
 - `POST /api/Inventory`: Add a new inventory item
@@ -75,7 +71,7 @@ The API provides the following endpoints:
 - `GET /api/Customer`: Fetch all customers
 - `POST /api/Customer`: Add a new customer
 
-- `GET /api/Checkout`: Fetch all checkouts
+- `GET /api/Checkout/logs`: Fetch all checkouts
 - `POST /api/Checkout`: Checkout an item to a customer
 - `PUT /api/Checkout/return/{id}`: Return a checked-out item
 
@@ -84,5 +80,3 @@ The API provides the following endpoints:
 Feel free to fork the project and submit a pull request with your changes!
 
 ---
-
-You can add this content to a `README.md` file in the root directory of your project. Feel free to modify it as you see fit!
