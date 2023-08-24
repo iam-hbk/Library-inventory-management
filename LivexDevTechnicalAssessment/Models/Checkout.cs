@@ -13,11 +13,12 @@ namespace LivexDevTechnicalAssessment.Models
         public int InventoryItemId { get; set; } //The ID of the item that has been checked out
         public DateTime CheckoutDate { get; set; } //The time when this transaction happened 
         public DateTime? ReturnDate { get; set; } //In case a library item is returned
+        public int Quantity { get; set; } //The amount of items that are being checked out 
 
         [ForeignKey("CustomerId")]
-        public Customer Customer { get; set; }
+        public Customer? Customer { get; set; }
 
         [ForeignKey("InventoryItemId")]
-        public Inventory InventoryItem { get; set; }
+        public Inventory? InventoryItem { get; set; }
     }
 }
