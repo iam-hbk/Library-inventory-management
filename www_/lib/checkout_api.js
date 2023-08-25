@@ -37,6 +37,7 @@ export async function checkout(item) {
 
         return await response.json();
     } catch (error) {
+        alert(error);
         console.error("Error during checkout:", error);
         throw error;
     }

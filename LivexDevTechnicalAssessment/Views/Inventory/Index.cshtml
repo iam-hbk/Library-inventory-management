@@ -1,0 +1,34 @@
+﻿@model IEnumerable<LivexDevTechnicalAssessment.Models.Inventory>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inventory</title>
+	<script src="~/js/inventory.js"></script>
+</head>
+<body>
+
+	<h1>Inventory</h1>
+
+	<table id="inventoryTable">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Price</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					<td>@item.Name</td>
+					<td>@item.Price</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+	
+
+</body>
+</html>
