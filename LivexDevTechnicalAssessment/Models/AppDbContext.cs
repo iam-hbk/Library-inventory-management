@@ -20,9 +20,9 @@ namespace LivexDevTechnicalAssessment.Models
         {
             //Create some data 
             modelBuilder.Entity<Inventory>().HasData(
-                new Inventory { Id = 1, Name = "Marvel Comic", Price = 149.99, Quantity = 10 },
-                new Inventory { Id = 2, Name = "Bible", Price = 89.99, Quantity = 5 },
-                new Inventory { Id = 3, Name = "One Piece", Price = 49.99, Quantity = 2 }
+                new Inventory { Id = 1, Name = "Marvel Comic", Price = 149.99, Quantity = 10,type= InventoryType.Book },
+                new Inventory { Id = 2, Name = "Bible", Price = 89.99, Quantity = 5,type= InventoryType.Book },
+                new Inventory { Id = 3, Name = "One Piece", Price = 49.99, Quantity = 2,type=InventoryType.Book }
 
             );
             modelBuilder.Entity<Customer>().HasData(
