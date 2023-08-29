@@ -15,6 +15,7 @@ export async function getInventory() {
         return await response.json();
     } catch (error) {
         console.error("Error fetching inventory:", error);
+        alert(`Error fetching inventory ${error}`)
         throw error;
     }
 }

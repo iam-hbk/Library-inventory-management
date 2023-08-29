@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout Logs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="text-white text-2xl font-semibold">
+            Livex Inventory Management
+          </div>
+          <ul class="flex space-x-4">
+            <li>
+              <a class="text-white hover:text-blue-300" href="inventory.html"
+                >Inventory</a
+              >
+            </li>
+            <li>
+              <a class="text-white hover:text-blue-300" href="customers.html"
+                >Customers</a
+              >
+            </li>
+            <li>
+              <a class="text-white hover:text-blue-300" href="checkouts.html"
+                >Checkout Logs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Boddy -->
+    <div id="app" class="container mx-auto p-4">
+      <!-- spinner -->
+      <div
+        id="loading-spinner"
+        class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+      >
+        <div class="loader"></div>
+      </div>
+
+      <h1 class="text-4xl mb-4">Checkout Logs</h1>
+      <section
+        id="checkout-section"
+        class="flex flex-col justify-center items-center"
+      >
+        <!-- List of checkout logs -->
+        <div id="checkout-list" class="min-w-[350px]" style="width: 75vw"></div>
+      </section>
+    </div>
+
+    <script type="module" src="scripts/checkout.js"></script>
+  </body>
+</html>

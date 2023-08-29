@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customers</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="text-white text-2xl font-semibold">
+            Livex Inventory Management
+          </div>
+          <ul class="flex space-x-4">
+            <li>
+              <a class="text-white hover:text-blue-300" href="inventory.html"
+                >Inventory</a
+              >
+            </li>
+            <li>
+              <a class="text-white hover:text-blue-300" href="customers.html"
+                >Customers</a
+              >
+            </li>
+            <li>
+              <a class="text-white hover:text-blue-300" href="checkouts.html"
+                >Checkout Logs</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="app" class="container mx-auto p-4">
+       <!-- spinner -->
+       <div
+       id="loading-spinner"
+       class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+     >
+       <div class="loader"></div>
+     </div>
+      <h1 class="text-4xl mb-4">Customer Management</h1>
+      <section
+        id="customer-section"
+        class="flex flex-col justify-center items-center"
+      >
+        <!-- List of customers -->
+        <div id="customer-list" class="min-w-[350px]" style="width: 75vw"></div>
+
+        <!-- Form to add new customers -->
+        <form
+          id="add-customer-form"
+          style="width: 40vw"
+          class="p-4 mt-10 rounded-md bg-gray-50 flex items-start flex-col gap-4 justify-between mb-4"
+        >
+          <h1>Add a New Customer</h1>
+          <input
+            type="text"
+            id="new-customer-name"
+            placeholder="Customer Name"
+            class="p-2 border rounded w-full"
+          />
+          <input
+            type="email"
+            id="new-customer-email"
+            placeholder="Customer Email"
+            class="p-2 border rounded w-full"
+          />
+          <button
+            type="submit"
+            class="bg-green-500 text-white p-2 rounded w-full"
+          >
+            Add Customer
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <script type="module" src="scripts/customer.js"></script>
+  </body>
+</html>
